@@ -1,0 +1,18 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net8.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="EF.Core.Repository" Version="1.0.0.2" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\ItemCategoryApp.Models\ItemCategoryApp.Models.csproj" />
+    <ProjectReference Include="..\ItemCategoryApp.Utility\ItemCategoryApp.Utility.csproj" />
+  </ItemGroup>
+
+</Project>
