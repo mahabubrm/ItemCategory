@@ -25,12 +25,13 @@ namespace ItemCategoryApp.Controllers
 
         public IActionResult Categories()
         {
-            var categories = _categoryManager.GetAll();
+            ViewBag.categories = _categoryManager.GetAll();
             return View();
         }
 
         public IActionResult Items()
         {
+            ViewBag.items = _itemManager.GetAll();
             return View();
         }
 
